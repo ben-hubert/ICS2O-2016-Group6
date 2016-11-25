@@ -1,5 +1,5 @@
 -- ICS2O-2016-Group6
--- GameLogoScene
+-- MainMenuScene
 
 -- Created by: Mr. Coxall
 -- Created on: Nov-2016
@@ -7,13 +7,18 @@
 -- This is the project for Group #6-2016
 -- This is the second scene to show up, the game logo.
 
-GameLogoScene = class()
+MainMenuScene = class()
 
 -- local variables to this scene
-
+local achievementsButton
+local settingsButton
+local creditsButton
+local helpButton
+local playButton
+local storeButton
 
 -- Use this function to perform your initial setup for this scene
-function GameLogoScene:init()
+function MainMenuScene:init()
     -- set up display options
     supportedOrientations(LANDSCAPE_ANY)
     noFill()
@@ -22,21 +27,21 @@ function GameLogoScene:init()
     pushStyle()  
     
     -- scene setup code here
-    startTime = ElapsedTime
+    
 end
 
-function GameLogoScene:draw()
+function MainMenuScene:draw()
     -- Codea does not automatically call this method
     
-    background(141, 0, 255, 255)
+    background(255, 255, 255, 255)
     if(startTime + 2 < ElapsedTime) then
         Scene.Change("mainMenuScene")
     end
     -- Do your drawing here
-    sprite("Project:GameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    
 end
 
-function GameLogoScene:touched(touch)
+function MainMenuScene:touched(touch)
     -- Codea does not automatically call this method
     
     -- Do your touch code here

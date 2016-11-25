@@ -10,6 +10,7 @@
 		<string>CompanyLogoScene</string>
 		<string>GameLogoScene</string>
 		<string>HelperClass</string>
+		<string>MainMenuScene</string>
 	</array>
 	<key>Description</key>
 	<string>No description available</string>
