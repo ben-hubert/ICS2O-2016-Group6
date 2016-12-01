@@ -18,9 +18,8 @@ DEBUG_GAMECENTER = true
 
 
 -- Use this function to perform your initial setup
-function setup()
-    -- set up display options
-    supportedOrientations(LANDSCAPE_ANY)
+function setup() -- set up display options
+    
     displayMode(FULLSCREEN)
     noFill()
     noSmooth()
@@ -29,7 +28,7 @@ function setup()
     
     -- create the scenes
     Scene("companyLogoScene", CompanyLogoScene)
-    -- delete this line and add in the rest of your scenes
+    Scene("gameLogoScene", GameLogoScene)   
     
     Scene.Change("companyLogoScene")
 end
