@@ -28,7 +28,7 @@ function setup() -- set up display options
     
     -- create the scenes
     Scene("companyLogoScene", CompanyLogoScene)
-    Scene("gameLogoScene", GameLogoScene)
+    Scene("gameLogoScene", GameLogoScene)   
     
     Scene.Change("companyLogoScene")
 end
