@@ -29,11 +29,12 @@ function GameLogoScene:draw()
     -- Codea does not automatically call this method
     
     background(141, 0, 255, 255)
+    sprite("Project:GameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
     if(startTime + 2 < ElapsedTime) then
         Scene.Change("mainMenuScene")
     end
     -- Do your drawing here
-    sprite("Project:GameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    
 end
 
 function GameLogoScene:touched(touch)

@@ -1,20 +1,15 @@
 -- ICS2O-2016-Group6
 -- MainMenuScene
 
--- Created by: Mr. Coxall
+-- Created by: Justin Richards
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #6-2016
--- This is the second scene to show up, the game logo.
+-- This is the main menu scene
 
 MainMenuScene = class()
 
 -- local variables to this scene
-local achievementsButton
-local settingsButton
-local creditsButton
-local helpButton
-local playButton
 local storeButton
 
 -- Use this function to perform your initial setup for this scene
@@ -27,16 +22,15 @@ function MainMenuScene:init()
     pushStyle()  
     
     -- scene setup code here
+    storeButton = Button("Small World:Icon", vec2(WIDTH/2, 200))
     
 end
 
 function MainMenuScene:draw()
     -- Codea does not automatically call this method
     
-    background(255, 255, 255, 255)
-    if(startTime + 2 < ElapsedTime) then
-        Scene.Change("mainMenuScene")
-    end
+    background(255, 152, 0, 255)
+    storeButton:draw()
     -- Do your drawing here
     
 end
@@ -44,6 +38,9 @@ end
 function MainMenuScene:touched(touch)
     -- Codea does not automatically call this method
     
-    -- Do your touch code here
+    storeButton:touched(touch)
     
+    if(storeButton.selected == true) then
+       Scene.Change("storeScreenScene")
+    end
 end

@@ -29,8 +29,12 @@ function setup() -- set up display options
     -- create the scenes
     Scene("companyLogoScene", CompanyLogoScene)
     Scene("gameLogoScene", GameLogoScene)   
+    Scene("mainMenuScene", MainMenuScene)
+    Scene("storeScreenScene", StoreScreenScene)
+    
     
     Scene.Change("companyLogoScene")
+    
 end
 
 -- This function gets called once every frame
