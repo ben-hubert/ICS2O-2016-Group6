@@ -10,6 +10,26 @@
 		<string>CompanyLogoScene</string>
 		<string>GameLogoScene</string>
 		<string>MainMenuScene</string>
+		<string>StoreScreenScene</string>
+		<string>CreditsScene</string>
+		<string>MainWorldScene</string>
+		<string>OwnedItemsHelpScene</string>
+		<string>MainGameFailScene</string>
+		<string>MainGameWinScene</string>
+		<string>MainGameScene</string>
+		<string>OwnedItemsScene</string>
+		<string>PurshasedScene</string>
+		<string>StoreHelpScene</string>
+		<string>AfterLevelWinScene</string>
+		<string>AfterLevelFailScene</string>
+		<string>TutorialFinalScene</string>
+		<string>TutorialFirstScene</string>
+		<string>TutorialSecondScene</string>
+		<string>TutorialThirdScene</string>
+		<string>WorldOneScene</string>
+		<string>WorldTwoScene</string>
+		<string>WorldThreeScene</string>
+		<string>WorldFourScene</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Description</key>
