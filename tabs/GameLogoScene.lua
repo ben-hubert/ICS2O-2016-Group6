@@ -1,7 +1,7 @@
 -- ICS2O-2016-Group6
--- GameLogoScene
+-- MainworldScene
 
--- Created by: Mr. Coxall
+-- Created by: Justin Richards
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #6-2016
@@ -15,7 +15,6 @@ GameLogoScene = class()
 -- Use this function to perform your initial setup for this scene
 function GameLogoScene:init()
     -- set up display options
-    supportedOrientations(LANDSCAPE_ANY)
     noFill()
     noSmooth()
     noStroke()
@@ -29,11 +28,12 @@ function GameLogoScene:draw()
     -- Codea does not automatically call this method
     
     background(141, 0, 255, 255)
+    sprite("Project:GameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
     if(startTime + 2 < ElapsedTime) then
         Scene.Change("mainMenuScene")
     end
     -- Do your drawing here
-    sprite("Project:GameBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    
 end
 
 function GameLogoScene:touched(touch)
