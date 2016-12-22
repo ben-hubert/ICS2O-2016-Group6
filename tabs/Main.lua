@@ -1,7 +1,7 @@
 -- ICS2O-2016-Group6
 -- Main
 
--- Created by: Mr. Coxall
+-- Created by: Justin Richards
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #6-2016
@@ -13,6 +13,9 @@
 DEBUG_GAMECENTER = true
 
 -- Global variables to the entire project
+itemPurcased = {}
+worldSelected = nil
+levelSelected = nil
 
 -- local variables to this scene
 
@@ -31,7 +34,8 @@ function setup() -- set up display options
     Scene("gameLogoScene", GameLogoScene)   
     Scene("mainMenuScene", MainMenuScene)
     Scene("storeScreenScene", StoreScreenScene)
-    
+    Scene("creditsScene", CreditsScene)
+    Scene("mainWorldScene", MainWorldScene)
     
     Scene.Change("companyLogoScene")
     
@@ -40,7 +44,7 @@ end
 -- This function gets called once every frame
 function draw()
     -- This sets a dark background color 
-    background(0, 0, 0, 255)
+    background(0, 255, 9, 255)
 
     -- Do your drawing here
     Scene.Draw() 

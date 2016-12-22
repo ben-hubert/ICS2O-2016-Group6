@@ -1,7 +1,7 @@
 -- ICS2O-2016-Group6
--- GameLogoScene
+-- MainworldScene
 
--- Created by: Mr. Coxall
+-- Created by: Justin Richards
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #6-2016
@@ -15,7 +15,6 @@ GameLogoScene = class()
 -- Use this function to perform your initial setup for this scene
 function GameLogoScene:init()
     -- set up display options
-    supportedOrientations(LANDSCAPE_ANY)
     noFill()
     noSmooth()
     noStroke()

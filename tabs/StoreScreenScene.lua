@@ -1,4 +1,4 @@
--- SplashScreenScene
+-- StoreScreenScene
 -- Lesson 6
 
 -- Created by: Justin Richards
@@ -14,7 +14,7 @@ local moveBackButton
 function StoreScreenScene:init()
 
     --sprite("Cargo Bot:Command Right")
-    moveBackButton = Button("Dropbox:Blue Back Circle Button", vec2(100, 700))  
+    moveBackButton = Button("Project:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
    
 end
     
@@ -23,16 +23,17 @@ function StoreScreenScene:draw()
     -- Codea does not automatically call this method
 
     background(0, 255, 180, 255)
-    sprite("Cargo Bot:Dialogue Box", WIDTH/2, 650)
+    sprite("Project:Dialogue Box", WIDTH/2, HEIGHT/1.15)
     fill(199, 255, 0, 255)
     stroke(221, 255, 0, 255)
     fontSize(75)
     font("Copperplate-Bold")
-    text("Shop", WIDTH/2, 650) 
+    pushStyle()
+    text("Shop",WIDTH/2, HEIGHT/1.15)
     fill(152, 150, 150, 255)
-    text("🛡", 650, 646)
  
     moveBackButton:draw()
+    popStyle()
 end
 
 function StoreScreenScene:touched(touch)
