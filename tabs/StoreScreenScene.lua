@@ -14,7 +14,7 @@ local moveBackButton
 function StoreScreenScene:init()
 
     --sprite("Cargo Bot:Command Right")
-    moveBackButton = Button("Project:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
+    moveBackButton = Button("Dropbox:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
    
 end
     
@@ -23,7 +23,7 @@ function StoreScreenScene:draw()
     -- Codea does not automatically call this method
 
     background(0, 255, 180, 255)
-    sprite("Project:Dialogue Box", WIDTH/2, HEIGHT/1.15)
+    sprite("Dropbox:Dialogue Button", WIDTH/2, HEIGHT/1.15)
     fill(199, 255, 0, 255)
     stroke(221, 255, 0, 255)
     fontSize(75)

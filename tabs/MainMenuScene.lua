@@ -22,13 +22,13 @@ function MainMenuScene:init()
     noSmooth()
     noStroke()
     pushStyle()  
-    --sprite("Cargo Bot:Dialogue Box")
+    sprite("Planet Cute:Character Horn Girl")
         
     -- scene setup code here
-    storeButton = Button("Project:Icon", vec2(WIDTH/2, HEIGHT/10))
-    creditsButton = Button("Project:Selector", vec2(WIDTH/1.05, HEIGHT/0.9899))
-    acheivmentsButton = Button("Project:Chest Closed", vec2(WIDTH/20, HEIGHT/0.9899))
-    playButton = Button("Project:Blue Move Scene Forward Button", vec2(WIDTH/2, HEIGHT/2))
+    storeButton = Button("Dropbox:Icon", vec2(WIDTH/2, HEIGHT/10))
+    creditsButton = Button("Dropbox:Selector", vec2(WIDTH/1.05, HEIGHT/0.9899))
+    acheivmentsButton = Button("Dropbox:Chest Closed", vec2(WIDTH/20, HEIGHT/0.9899))
+    playButton = Button("Dropbox:Blue Move Scene Forward Button", vec2(WIDTH/2, HEIGHT/2))
 end
 
 function MainMenuScene:draw()
