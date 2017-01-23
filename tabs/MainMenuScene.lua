@@ -25,10 +25,10 @@ function MainMenuScene:init()
     noStroke()
     pushStyle()  
 
-   -- sprite("Planet Cute:Character Horn Girl")
+ --sprite("Dropbox:GoodStoreIcon")
         
     -- scene setup code here
-    storeButton = Button("Dropbox:Icon", vec2(WIDTH/2, HEIGHT/10))
+    storeButton = Button("Dropbox:GoodStoreIcon", vec2(WIDTH/2, HEIGHT/10))
     creditsButton = Button("Dropbox:Selector", vec2(WIDTH/1.05, HEIGHT/0.9899))
     acheivmentsButton = Button("Dropbox:Chest Closed", vec2(WIDTH/20, HEIGHT/0.9899))
     playButton = Button("Dropbox:Blue Move Scene Forward Button", vec2(WIDTH/2, HEIGHT/2))
