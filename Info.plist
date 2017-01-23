@@ -14,9 +14,9 @@
 		<string>CreditsScene</string>
 		<string>MainWorldScene</string>
 		<string>OwnedItemsHelpScene</string>
+		<string>MainGameScene</string>
 		<string>MainGameFailScene</string>
 		<string>MainGameWinScene</string>
-		<string>MainGameScene</string>
 		<string>OwnedItemsScene</string>
 		<string>PurshasedScene</string>
 		<string>StoreHelpScene</string>
