@@ -30,7 +30,7 @@ function CompanyLogoScene:draw()
     
     background(255, 0, 0, 255)
     sprite("Dropbox:CompanyBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
-    -- Do your drawing hwere
+    -- Do your drawing here
     if(startTime + 2 < ElapsedTime) then
         Scene.Change("gameLogoScene")
     end

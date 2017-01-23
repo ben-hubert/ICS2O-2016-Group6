@@ -39,9 +39,14 @@ function setup() -- set up display options
     Scene("storeScreenScene", StoreScreenScene)
     Scene("creditsScene", CreditsScene)
     Scene("mainWorldScene", MainWorldScene)
-    Scene("ownedItemsHelp", OwnedItemsHelpScene)
-    Scene("ownedItemsScene", OwnedItemsScene)
     Scene("storeHelpScene", StoreHelpScene)
+    Scene("mainGameScene", MainGameScene)
+    Scene("mainGameFailScene", MainGameFailScene)
+    Scene("mainGameWinScene", MainGameWinScene)
+    Scene("mainWorldScene", MainWorldScene)
+    Scene("afterLevelWinScene", AfterLevelWinScene)
+    Scene("afterLevelFailScene",AfterLevelFailScene)
+
     Scene.Change("companyLogoScene")
     
 end

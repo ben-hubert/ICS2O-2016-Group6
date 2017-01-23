@@ -27,10 +27,9 @@ local codeBackground
 
 
 function StoreScreenScene:init()
-
---sprite("Dropbox:MenuBackground")
+    --sprite("Dropbox:MenuBackground")
     moveBackButton = Button("Dropbox:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
-   redBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/2, HEIGHT/2.3))
+    redBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/2, HEIGHT/2.3))
     defaultBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/2, HEIGHT/1.6))
     purpleBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/2, HEIGHT/4.1))
     blueBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/4.9, HEIGHT/1.6))
@@ -41,19 +40,18 @@ function StoreScreenScene:init()
     legendaryBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/1.25, HEIGHT/4.1))
     codeBackground = Button("Dropbox:Level Select BG", vec2(WIDTH/4.9, HEIGHT/4.1))
     --legendbackground = sprite("Dropbox:MenuBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
-    
 end
     
 
 function StoreScreenScene:draw()
     -- Codea does not automatically call this method
---sprite()
+    --sprite()
     
     font("AmericanTypewriter-Bold")
     fill(255, 8, 0, 255)
     
-    sprite()
-    print(backgroundChangeColor)
+    --sprite()
+    --print(backgroundChangeColor)
     background(backgroundColor)
     if(legendaryBackground.selected == true) then
         --legendbackground = true
@@ -66,7 +64,6 @@ function StoreScreenScene:draw()
     font("Copperplate-Bold")
     pushStyle()
     text("Shop",WIDTH/2, HEIGHT/1.15)
-    
 
     moveBackButton:draw()
     redBackground:draw()
@@ -212,7 +209,5 @@ function StoreScreenScene:touched(touch)
     
     if(codeBackground.selected == true) then
         backgroundColor = color(255, 0, 246, 255)
-    end
-    
-    
+    end  
 end
