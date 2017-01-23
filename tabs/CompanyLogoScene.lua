@@ -29,8 +29,8 @@ function CompanyLogoScene:draw()
     -- Codea does not automatically call this method
     
     background(255, 0, 0, 255)
-    sprite("Project:CompanyBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
-    -- Do your drawing here
+    sprite("Dropbox:CompanyBackground", WIDTH/2, HEIGHT/2, WIDTH, HEIGHT)
+    -- Do your drawing hwere
     if(startTime + 2 < ElapsedTime) then
         Scene.Change("gameLogoScene")
     end

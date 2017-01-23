@@ -2,6 +2,7 @@
 -- MainMenuScene
 
 -- Created by: Justin Richards
+-- Created by: Ben Hubert
 -- Created on: Nov-2016
 -- Created for: ICS2O
 -- This is the project for Group #6-2016
@@ -14,6 +15,7 @@ local storeButton
 local creditsButton
 local acheivmentsButton
 local playButton
+local owneditemsbutton
 
 -- Use this function to perform your initial setup for this scene
 function MainMenuScene:init()
@@ -22,20 +24,22 @@ function MainMenuScene:init()
     noSmooth()
     noStroke()
     pushStyle()  
-    --sprite("Cargo Bot:Dialogue Box")
+    sprite("Dropbox:GoodStoreIcon")
         
     -- scene setup code here
-    storeButton = Button("Project:Icon", vec2(WIDTH/2, HEIGHT/10))
-    creditsButton = Button("Project:Selector", vec2(WIDTH/1.05, HEIGHT/0.9899))
-    acheivmentsButton = Button("Project:Chest Closed", vec2(WIDTH/20, HEIGHT/0.9899))
-    playButton = Button("Project:Blue Move Scene Forward Button", vec2(WIDTH/2, HEIGHT/2))
+    storeButton = Button("Dropbox:GoodStoreIcon", vec2(WIDTH/2, HEIGHT/10, WIDTH/1, HEIGHT/1))
+    creditsButton = Button("Dropbox:Selector", vec2(WIDTH/1.05, HEIGHT/0.9899))
+    acheivmentsButton = Button("Dropbox:Chest Closed", vec2(WIDTH/20, HEIGHT/0.9899))
+    playButton = Button("Dropbox:Blue Move Scene Forward Button", vec2(WIDTH/2, HEIGHT/2))
+
 end
 
 function MainMenuScene:draw()
     -- Codea does not automatically call this method
     
     -- Do your drawing here
-    background(255, 152, 0, 255)
+    background(backgroundColor)
+    
     storeButton:draw()
     creditsButton:draw()
     acheivmentsButton:draw()
@@ -62,4 +66,5 @@ function MainMenuScene:touched(touch)
     if(playButton.selected == true) then
         Scene.Change("mainWorldScene")
     end
+    
 end

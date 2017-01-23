@@ -18,12 +18,12 @@ local ww4Button
 
 function MainWorldScene:init()
 
-    --sprite("Project:Block Brick")
-    mBackButton = Button("Project:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
-    ww1Button = Button("Project:Block Special", vec2(WIDTH/4, HEIGHT/3.5))
-    ww2Button = Button("Project:Block Brick", vec2(WIDTH/1.3, HEIGHT/1.3))
-    ww3Button = Button("Project:Block Grass", vec2(WIDTH/4, HEIGHT/1.3))
-    ww4Button = Button("Project:Block Special Brick", vec2(WIDTH/1.3, HEIGHT/3.5))
+    sprite("Platformer Art:Block Grass")
+    mBackButton = Button("Dropbox:Blue Back Circle Button", vec2(WIDTH/20, HEIGHT/1.067))  
+    ww1Button = Button("Dropbox:Block Special", vec2(WIDTH/4, HEIGHT/3.5))
+    ww2Button = Button("Dropbox:Block Brick", vec2(WIDTH/1.3, HEIGHT/1.3))
+    ww3Button = Button("Dropbox:Block Grass", vec2(WIDTH/4, HEIGHT/1.3))
+    ww4Button = Button("Dropbox:Block Special Brick", vec2(WIDTH/1.3, HEIGHT/3.5))
     
 end
     
@@ -31,7 +31,7 @@ end
 function MainWorldScene:draw()
     -- Codea does not automatically call this method
 
-    background(60, 0, 255, 255)
+    background(backgroundColor)
     fill(199, 255, 0, 255)
     stroke(221, 255, 0, 255)
     fontSize(75)
